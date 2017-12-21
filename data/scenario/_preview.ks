@@ -6,7 +6,6 @@
 //APIキーの読み込み
 $.getJSON("data/others/apikey.json" , function(data) {
 var apikey = data.apikey ;
-});
 //気象情報の取得
 $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Nara-shi,JP&APPID=" + apikey, function (data) {
 if (!data.cod || data.cod != 200) {
@@ -23,6 +22,7 @@ f.weather = data[weather_main.toLowerCase()];
 //気象情報説明日本語対応用のjson読み込み
 $.getJSON("data/others/weather_code.json" , function(data) {
 f.weather_desc = data[weather_id] ;
+});
 });
 });
 //現在時刻の取得
