@@ -1,0 +1,40 @@
+{
+	"version":"Sample 1.0.0",
+	"model":"koharu.moc",
+	"textures":[
+		"koharu.2048/texture_00.png"
+	],
+	"expressions":[
+		{"name":"idle","file":"expressions/idle.exp.json"},
+		{"name":"cry","file":"expressions/cry.exp.json"},
+		{"name":"angry","file":"expressions/angry.exp.json"},
+		{"name":"kiai","file":"expressions/kiai.exp.json"},
+		{"name":"kirakira","file":"expressions/kirakira.exp.json"},
+		{"name":"smile","file":"expressions/smile.exp.json"},
+		{"name":"trouble","file":"expressions/trouble.exp.json"}
+	],
+	"motions":{
+		"idle":[
+			{"file":"mtn/idle.mtn"}
+		],
+		"":[
+			{"file":"mtn/appeal.mtn"},
+			{"file":"mtn/ponpon.mtn"},
+			{"file":"mtn/ponpon_nod.mtn"},
+			{"file":"mtn/tambourine.mtn"},
+			{"file":"mtn/kirakira.mtn"},
+			{"file":"mtn/angry.mtn"},
+			{"file":"mtn/trouble.mtn"},
+			{"file":"mtn/furifuri.mtn"},
+			{"file":"mtn/cry.mtn"},
+			{"file":"mtn/gakkari.mtn"},
+			{"file":"mtn/hatena.mtn"},
+			{"file":"mtn/nikkori.mtn"},
+			{"file":"mtn/yes.mtn"},
+			{"file":"mtn/nod.mtn"},
+			{"file":"mtn/iyaiya.mtn"}
+		]
+		},
+	"physics":"koharu.physics.json",
+	"name":"koharu"
+}
